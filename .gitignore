@@ -66,6 +66,8 @@ cmake-build-*/
 out/
 .vs/
 
+.CMakePresets.json
+
 # Qt Creator
 *.pro.user
 *.pro.user.*
