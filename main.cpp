@@ -14,7 +14,7 @@ int sumVector(const std::vector<int>& a, int start, int end) {
 }
 
 int main() {
-    const int size = 10000000;
+    const int size = 100000000;
     std::vector<int> vec(size);
     std::srand(std::time(0));
     for (int i = 0; i < size; i++) {

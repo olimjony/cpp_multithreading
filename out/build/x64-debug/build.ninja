@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:\Users\orimu\source\repos\CMakeProject1\out\build\x64-d
 
 build cmake_object_order_depends_target_CMakeProject1: phony || .
 
-build CMakeFiles\CMakeProject1.dir\CMakeProject1.cpp.obj: CXX_COMPILER__CMakeProject1_unscanned_Debug C$:\Users\orimu\source\repos\CMakeProject1\CMakeProject1.cpp || cmake_object_order_depends_target_CMakeProject1
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+build CMakeFiles\CMakeProject1.dir\main.cpp.obj: CXX_COMPILER__CMakeProject1_unscanned_Debug C$:\Users\orimu\source\repos\CMakeProject1\main.cpp || cmake_object_order_depends_target_CMakeProject1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20
   OBJECT_DIR = CMakeFiles\CMakeProject1.dir
   OBJECT_FILE_DIR = CMakeFiles\CMakeProject1.dir
   TARGET_COMPILE_PDB = CMakeFiles\CMakeProject1.dir\
@@ -64,8 +64,8 @@ build CMakeFiles\CMakeProject1.dir\CMakeProject1.cpp.obj: CXX_COMPILER__CMakePro
 #############################################
 # Link the executable CMakeProject1.exe
 
-build CMakeProject1.exe: CXX_EXECUTABLE_LINKER__CMakeProject1_Debug CMakeFiles\CMakeProject1.dir\CMakeProject1.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+build CMakeProject1.exe: CXX_EXECUTABLE_LINKER__CMakeProject1_Debug CMakeFiles\CMakeProject1.dir\main.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\CMakeProject1.dir
