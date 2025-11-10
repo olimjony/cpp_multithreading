@@ -63,6 +63,8 @@ Makefile
 # CLion
 .idea/
 cmake-build-*/
+out/
+.vs/
 
 # Qt Creator
 *.pro.user
