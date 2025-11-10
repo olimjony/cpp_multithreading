@@ -14,7 +14,7 @@ int sumVector(const std::vector<int>& a, int start, int end) {
 }
 
 int main() {
-    const int size = 1000000;
+    const int size = 10000000;
     std::vector<int> vec(size);
     std::srand(std::time(0));
     for (int i = 0; i < size; i++) {
@@ -30,10 +30,10 @@ int main() {
 
     int sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
     auto st_multi = std::chrono::high_resolution_clock::now();
-    std::thread t1([&sum1, &vec]() { sum1 = sumVector(vec, 0, 250000); });
-    std::thread t2([&sum2, &vec]() { sum2 = sumVector(vec, 250000, 500000); });
-    std::thread t3([&sum3, &vec]() { sum3 = sumVector(vec, 500000, 750000); });
-    std::thread t4([&sum4, &vec]() { sum4 = sumVector(vec, 750000, 1000000); });
+    std::thread t1([&sum1, &vec]() { sum1 = sumVector(vec, 0, 2500000); });
+    std::thread t2([&sum2, &vec]() { sum2 = sumVector(vec, 2500000, 5000000); });
+    std::thread t3([&sum3, &vec]() { sum3 = sumVector(vec, 5000000, 7500000); });
+    std::thread t4([&sum4, &vec]() { sum4 = sumVector(vec, 7500000, 10000000); });
     t1.join();
     t2.join();
     t3.join();
